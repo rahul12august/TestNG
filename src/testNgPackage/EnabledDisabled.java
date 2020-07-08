@@ -21,5 +21,5 @@ public class EnabledDisabled {
 	  public static void thirdMethod() {
 		  System.out.println("Third");
 	  }
-	  
+	 
 }
