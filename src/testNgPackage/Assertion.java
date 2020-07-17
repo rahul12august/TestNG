@@ -6,32 +6,32 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class Assertion {
-	
 	@Test(enabled=false)
-	public void method1() {
-		String str1="test";
-		String str2="test";
-		Assert.assertEquals(str1,str2);
-		int x=1;
-		int y=2;
-		Assert.assertEquals(x,y);
+	public void assertJava() throws Exception {
+		String s1="RahulT";
+		String s2="Rahul";
+		int i=10;
+		int j=10;
+		if(s1.equals(s2)) {
+			System.out.println("String validation passes");
+		}else {
+			throw new Exception("String validation fails");
+		}
+		if(i==j) {
+			System.out.println("Int validation passed");
+		}else {
+			throw new Exception("Int Validation fails");
+		}
+		
 	}
 	
 	@Test
-	public void method2() throws Exception {
-		String str1="test";
-		String str2="test1";
-		if(str1.equals(str2)) {
-			System.out.println("Both Values are equal");
-		}else {
-			throw new Exception("Both Values are NOT equal");
-		}
-		int x=1;
-		int y=2;
-		if(x==y) {
-			System.out.println("x and y Values are equal");
-		}else {
-			throw new Exception("x and y Values are NOT equal");
-		}
+	public void assertTestNg() {
+		String s1="RahulT";
+		String s2="Rahul";
+		int i=10;
+		int j=10;
+		Assert.assertEquals(s1, s2);
+		Assert.assertEquals(i, j);
 	}
 }
